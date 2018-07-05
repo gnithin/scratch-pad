@@ -1,6 +1,9 @@
 #import "SCPBase.h"
-@import AFNetworking;
-@import MNetJSONModeller;
+
+#import <AFNetworking/AFHTTPSessionManager.h>
+#import <AFNetworking/AFImageDownloader.h>
+
+#import <MNetJSONModeller/MNJMManager.h>
 
 @implementation SCPBase
 
