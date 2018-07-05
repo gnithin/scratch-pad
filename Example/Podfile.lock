@@ -1,0 +1,16 @@
+PODS:
+  - scratch-pad (0.1.0)
+
+DEPENDENCIES:
+  - scratch-pad (from `../`)
+
+EXTERNAL SOURCES:
+  scratch-pad:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  scratch-pad: 5746f38d790a01727f1373ed584e737d0565ca6b
+
+PODFILE CHECKSUM: e3d264c81a6a6c8732c4ddef2ed9b9ce7ac1e40e
+
+COCOAPODS: 1.5.3
