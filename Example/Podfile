@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'scratch-pad_Example' do
+  pod 'scratch-pad', :path => '../'
+
+  target 'scratch-pad_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
