@@ -1,16 +1,42 @@
 PODS:
-  - scratch-pad (0.1.0)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - MNetJSONModeller (1.1.5)
+  - scratch-pad (0.1.0):
+    - AFNetworking (= 3.1.0)
+    - MNetJSONModeller (= 1.1.5)
 
 DEPENDENCIES:
   - scratch-pad (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+  https://github.com/media-net/mnet-pod-specs.git:
+    - MNetJSONModeller
 
 EXTERNAL SOURCES:
   scratch-pad:
     :path: "../"
 
 SPEC CHECKSUMS:
-  scratch-pad: 5746f38d790a01727f1373ed584e737d0565ca6b
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  MNetJSONModeller: 924fc3e382f6f2a6c83d6bb4277a767dea8562aa
+  scratch-pad: 82b334fae86b5768b92654929d829b2c18e78d22
 
-PODFILE CHECKSUM: e3d264c81a6a6c8732c4ddef2ed9b9ce7ac1e40e
+PODFILE CHECKSUM: ce55aa7b487f489b6ef0cbc2d9892964aa029830
 
 COCOAPODS: 1.5.3

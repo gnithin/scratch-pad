@@ -7,9 +7,10 @@
 //
 
 #import "SCPViewController.h"
+@import scratch_pad;
 
 @interface SCPViewController ()
-
+@property (nonnull) NSURLSessionDataTask *sessionTask;
 @end
 
 @implementation SCPViewController
@@ -18,6 +19,20 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"Loading view in SCPViewController");
+    
+    NSString *url = @"https://jsonplaceholder.typicode.com/posts/1";
+    NSURLSessionDataTask *task = [SCPBase makeReqFor:url withResponseCallback:^(id responseObj, NSError *respErr) {
+        NSLog(@"Got response!");
+        NSLog(@"Data - %@", responseObj);
+    }];
+    
+    if(task == nil){
+        NSLog(@"Request error");
+    }else{
+        self.sessionTask = task;
+        NSLog(@"Made the request - %@", url);
+    }
 }
 
 - (void)didReceiveMemoryWarning

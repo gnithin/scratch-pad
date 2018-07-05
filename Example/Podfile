@@ -1,5 +1,8 @@
 use_frameworks!
 
+source 'https://github.com/media-net/mnet-pod-specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 target 'scratch-pad_Example' do
   pod 'scratch-pad', :path => '../'
 
