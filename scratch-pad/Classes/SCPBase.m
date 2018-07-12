@@ -5,6 +5,8 @@
 
 #import <MNetJSONModeller/MNJMManager.h>
 
+#import <GoogleMobileAds/DFPRequest.h>
+
 @implementation SCPBase
 
 static AFHTTPSessionManager *managerInstance;
@@ -28,6 +30,7 @@ static AFHTTPSessionManager *managerInstance;
 
 + (NSURLSessionDataTask *)makeReqFor:(NSString *)url withResponseCallback:(void(^)(id, NSError *))callback{
     AFHTTPSessionManager *manager = [self getManager];
+    NSLog(@"DFP-request - %@", [DFPRequest new]);
     NSLog(@"Making request for log - %@", url);
     return [manager GET:url parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSError *jsonError;
