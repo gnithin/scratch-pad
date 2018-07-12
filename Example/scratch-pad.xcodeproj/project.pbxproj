@@ -24,6 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		77A053BBB9CA7B74F0718E1E /* Pods_scratch_pad_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0483A7C6A925EA7A66301839 /* Pods_scratch_pad_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		AEB077FF20EE4CEF004CD13C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF84DED20EE493000F0E431 /* SystemConfiguration.framework */; };
+		AEB0780020EE4CF4004CD13C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF84DEF20EE495C00F0E431 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		0483A7C6A925EA7A66301839 /* Pods_scratch_pad_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scratch_pad_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		375C9A310905A014B6E09D29 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		375C9A310905A014B6E09D29 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		41DDEF8DF760E2BFB05C562B /* Pods-scratch-pad_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scratch-pad_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-scratch-pad_Tests/Pods-scratch-pad_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* scratch-pad_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "scratch-pad_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,8 +65,10 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92CEDD8DF991C9F44DA9A344 /* Pods-scratch-pad_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scratch-pad_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-scratch-pad_Example/Pods-scratch-pad_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AE2B506BDA3590A25C91BA21 /* scratch-pad.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "scratch-pad.podspec"; path = "../scratch-pad.podspec"; sourceTree = "<group>"; };
-		B2189D105E2C65CB511D9454 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AE2B506BDA3590A25C91BA21 /* scratch-pad.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "scratch-pad.podspec"; path = "../scratch-pad.podspec"; sourceTree = "<group>"; };
+		AEF84DED20EE493000F0E431 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AEF84DEF20EE495C00F0E431 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B2189D105E2C65CB511D9454 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B32555F02FE6D30BB458E884 /* Pods-scratch-pad_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scratch-pad_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-scratch-pad_Example/Pods-scratch-pad_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E5E7E34052606567A13EEFD4 /* Pods_scratch_pad_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scratch_pad_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -74,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB0780020EE4CF4004CD13C /* MobileCoreServices.framework in Frameworks */,
+				AEB077FF20EE4CEF004CD13C /* SystemConfiguration.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -119,6 +125,8 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AEF84DEF20EE495C00F0E431 /* MobileCoreServices.framework */,
+				AEF84DED20EE493000F0E431 /* SystemConfiguration.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -207,7 +215,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				6EBFA70F9F9C23CD9D3128CB /* [CP] Embed Pods Frameworks */,
+				2A0DDFC16CF91F9C32419D62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,7 +320,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6EBFA70F9F9C23CD9D3128CB /* [CP] Embed Pods Frameworks */ = {
+		2A0DDFC16CF91F9C32419D62 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,13 +329,11 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-scratch-pad_Example/Pods-scratch-pad_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/MNetJSONModeller/MNetJSONModeller.framework",
-				"${BUILT_PRODUCTS_DIR}/scratch-pad/scratch_pad.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MNetJSONModeller.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/scratch_pad.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -492,6 +498,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "scratch-pad/scratch-pad-Prefix.pch";
 				INFOPLIST_FILE = "scratch-pad/scratch-pad-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +514,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "scratch-pad/scratch-pad-Prefix.pch";
 				INFOPLIST_FILE = "scratch-pad/scratch-pad-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

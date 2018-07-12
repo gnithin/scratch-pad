@@ -7,7 +7,8 @@
 //
 
 #import "SCPViewController.h"
-@import scratch_pad;
+#import <scratch_pad/SCPBase.h>
+#import <GoogleMobileAds/DFPRequest.h>
 
 @interface SCPViewController ()
 @property (nonnull) NSURLSessionDataTask *sessionTask;
@@ -20,6 +21,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     NSLog(@"Loading view in SCPViewController");
+    NSLog(@"Request - %@", [DFPRequest new]);
+    
     
     NSString *url = @"https://jsonplaceholder.typicode.com/posts/1";
     NSURLSessionDataTask *task = [SCPBase makeReqFor:url withResponseCallback:^(id responseObj, NSError *respErr) {
