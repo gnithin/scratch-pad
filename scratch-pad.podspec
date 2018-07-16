@@ -40,5 +40,7 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '3.1.0'
   s.dependency 'MNetJSONModeller', '1.1.5'
+  s.dependency 'Google-Mobile-Ads-SDK', '>= 7.0'
+
 
 end
